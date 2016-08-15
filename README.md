@@ -1,4 +1,4 @@
-# 3-text
+##[3^text]
 
 a small and tiny application that can process textfiles. 
 
