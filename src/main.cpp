@@ -67,7 +67,7 @@ bool Text::load_file(const string &filename) {
 
 void Text::downcase()
 {
-  for_each(content.begin(), content.end(), [](string &s){ transform(s.begin(), s.end(), s.begin(), ::tolower); });
+  for_each(content.begin(), content.end(), [](string &s){ transform(s.begin(), s.end(), s.begin(), ::tolower);});
 }
 
 void Text::upcase()
@@ -150,9 +150,6 @@ options: \n\
 int main(int argc, char **argv){
   if (argc >1) {
     Text text(argc, argv);
-    if (text.cmd_options_exists("--help")) {
-      cout << "do something cool with this function" << endl;
-    }
     if (!text.load_file(argv[argc -1])) {
       return 1;
     }
