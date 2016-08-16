@@ -2,12 +2,12 @@
 
 A small and tiny application that can process textfiles for use with less great webinterfaces for blogging.   
 
-### Usage: 
+### Usage:
 ```bash
-$ dist/text -t -d testfile.txt
+$ bin/text -t -d testfile.txt
 ```
 
-Will read the testfile.txt 
+Will read the testfile.txt
 ```bash
 this is the first line
 this is the second line
@@ -18,7 +18,7 @@ detta är en annan test för att se om vi kan få en tom rad. det skulle göra l
 lite enklare...
 #tag detta är en #annan #liten tag
 ```
-Will process into: 
+Will process into:
 
 ```bash
 --{ tags }--
@@ -32,10 +32,11 @@ this is the first line this is the second line test line in uppercase test blaha
 detta är en annan test för att se om vi kan få en tom rad. det skulle göra livet lite enklare... tag detta är en annan liten tag
 ```
 ### Options
-+ `-t` will collect tags from the text (must be written as #tag) 
-+ `-d` will downcase all text. 
-+ `-u` will upcase all text. 
++ `-t` will collect tags from the text (must be written as #tag)
++ `-d` will downcase all text.
++ `-u` will upcase all text.
 
 
 ### Compile
-`g++ -std=c++11 src/main.cpp -o dist/text`
+`g++ -std=c++11 src/main.cpp -o dist/text -w`
+or run makefile
