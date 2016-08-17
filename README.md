@@ -1,6 +1,6 @@
 ##[3^text]
 
-A small and tiny application that can process textfiles for use with less great webinterfaces for blogging.   
+A small and tiny application that can process textfiles for use with "less great" webinterfaces for blogging.   
 
 ### Usage:
 ```bash
@@ -21,11 +21,11 @@ lite enklare...
 Will process into:
 
 ```bash
---{ tags }--
+=={  tags  }============================
 
-#tag, #annan, #liten
+tag, annan, liten, little, people, stretch { >1 min }
 
---{ body }--
+=={ content }===========================
 
 this is the first line this is the second line test line in uppercase test blaha test blaha
 
