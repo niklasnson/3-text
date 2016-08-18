@@ -23,7 +23,7 @@ Will process into:
 ```bash
 =={  tags  }============================
 
-tag, annan, liten, little, people, stretch { >1 min }
+tag, annan, liten { >1 min }
 
 =={ content }===========================
 

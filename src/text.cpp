@@ -163,13 +163,13 @@ void Parser::render() {
   });
   str = strip("#", str);
 
-  cout << "=={ content }===========================" << endl << endl;
+  cout << "=={ content }" << string(49, '=') << endl << endl;
   printf("%s \n", str.c_str());
   cout << endl;
 }
 
 void Parser::render_tags(string tags) {
-  cout << "=={  tags  }============================" << endl << endl;
+  cout << endl <<  "=={  tags  }" << string(49, '=') << endl << endl;
   cout << strip("#", tags) <<  time_to_read() << endl;
   cout << endl;
 }
@@ -189,6 +189,19 @@ bool Parser::parse(bool downcase, bool upcase, bool tags) {
   return true;
 }
 
+void header() {
+  printf("\n\
+d88D d8888b.    db    d888888b d88888b db    db d888888b C88D \n\
+88   VP  `8D  .dPVb.  `~~88~~' 88'     `8b  d8' `~~88~~'   88 \n\
+88     oooY' dP'  `Vb    88    88ooooo  `8bd8'     88      88 \n\
+88     ~~~b.             88    88~~~~~  .dPYb.     88      88 \n\
+88   db   8D             88    88.     .8P  Y8.    88      88 \n\
+L88D Y8888P'             YP    Y88888P YP    YP    YP    C888 \
+  ");
+  printf("\n\
+                                                [niklas nson] \n\
+  ");
+}
 
 
 int main(int argc, char **argv) {
@@ -199,6 +212,7 @@ int main(int argc, char **argv) {
     bool downcase = (options.exists("-d") ? true : false);
     bool upcase   = (options.exists("-u") ? true : false);
     bool tags     = (options.exists("-t") ? true : false);
+    header();
     parser.parse(downcase, upcase, tags);
     return 0;
   }
