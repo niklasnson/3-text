@@ -169,7 +169,7 @@ void Parser::render() {
 }
 
 void Parser::render_tags(string tags) {
-  cout << endl <<  "=={  tags  }" << string(49, '=') << endl << endl;
+  cout << endl <<  "=={  tags   }" << string(49, '=') << endl << endl;
   cout << strip("#", tags) <<  time_to_read() << endl;
   cout << endl;
 }
